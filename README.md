@@ -10,7 +10,7 @@ This app exists for us as a class to further learn how to create an express serv
 
 ### Links and Resources
 
-- [GitHub Actions ci/cd](https://github.com/rkgallaway/server-deployment-practice-d51/actions)
+- [GitHub Actions ci/cd](https://github.com/JonathanStaib/basic-express-server/actions/)
 
 ### Setup
 
