@@ -15,10 +15,12 @@ app.get('/', (req, res, next) => {
   res.status(200).send(message);
 });
 
-app.get('/log', logger, (req, res, next) => {
+app.use(logger);
 
-  res.status(200).send(req.log);
-});
+// app.get('/log', logger, (req, res, next) => {
+
+//   res.status(200).send(req.log);
+// });
 
 app.get('/person', validator, (req, res, next) => {
 
