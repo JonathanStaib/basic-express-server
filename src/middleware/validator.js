@@ -9,10 +9,10 @@ const validator = (req, res, next) => {
   // } else {
   //   next();
   // }
-  if(req.query.name){
+  if(name){
     next();
   } else {
-    next('Query Name Required')
+    next('Query Name Required');
   }
 };
 
