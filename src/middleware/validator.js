@@ -3,14 +3,17 @@
 const validator = (req, res, next) => {
   let name = req.query.name;
 
-  if (!name) {
-    res.status(500).send('Error');
+  // if (!name) {
+  //   res.status(500).send('Error');
+  //   next();
+  // } else {
+  //   next();
+  // }
+  if(name){
     next();
   } else {
-    next();
+    next('Query Name Required');
   }
-  // const valid= `${req.query.name}`;
-  // res.status(200).json(valid);
 };
 
 module.exports = validator;
