@@ -19,13 +19,13 @@ describe('API Server', () => {
 
   test('handles the person post route', async () => {
     const response = await request.get('/person?name=Jonny');
-    let nameJson = JSON.stringify({name: 'Jonny'})
+    let nameJson = JSON.stringify({name: 'Jonny'});
     expect(response.text).toEqual(nameJson);
     expect(response.status).toEqual(200);
   });
 
   test('fails the person post route if no query name', async () => {
-    const response = await request.get('/person');;
+    const response = await request.get('/person');
     expect(response.status).toEqual(500);
   });
   
