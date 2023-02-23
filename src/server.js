@@ -27,11 +27,7 @@ app.get('/person', validator, (req, res, next) => {
   let person = {
     name: req.query.name,
   };
-  // if (!req.query.name) {
-    // next();
-    // return;
-  //   res.status(500).send('Error')
-  // };
+
   res.status(200).json(person);
 });
 
